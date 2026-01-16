@@ -1854,8 +1854,8 @@
 }
 
 .core-capabilities-image img {
-  width: 100%;
-  height: 100%;
+  width: 295px;
+  height: 205px;
   object-fit: cover;
   display: block;
 }
@@ -1882,4 +1882,36 @@
     grid-template-columns: 1fr;
     gap: 25px;
   }
+}
+.aboutEthanol{
+  height: 500px !important;
+}
+.qualityEthanolHeading{
+  font-size: 30px !important;
+}
+/* STAMPS */
+.hero-stamps {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 22px;
+}
+
+.hero-stamps img {
+    height: 130px;
+    width: auto;
+    /* background: #fff; */
+    padding: 8px 14px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+.bottomBoldPotable{
+  font-family: var(--font-family-root);
+  font-weight: 600;
+  font-size: 25px !important;
+}
+.potableHeading{
+  font-size: 20px;
+  font-family: var(--font-family-root);
+  margin: 12px 0;
+  font-weight: 600;
 }

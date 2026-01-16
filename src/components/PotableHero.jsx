@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import heroImage from '../assets/images/ethanol-hero.jpg';
+import React, { useEffect, useState } from "react";
+import heroImage from '../assets/images/potable-hero.jpg';
 import stamp1 from '../assets/images/kpdl-logo.jpg'
 import stamp2 from '../assets/images/shreyas-banner-logo.jpg'
 
-const EthanolHeroSection = () => {
+
+const PotableHero = () => {
     const [activeSlide, setActiveSlide] = useState(0);
 
     // Auto slide (optional – remove if not needed)
@@ -21,9 +22,9 @@ const EthanolHeroSection = () => {
         {
             id: 1,
             image: heroImage,
-            titleBold: "Distilleries<br/> & Ethanol",
+            titleBold: "Potable<br/>Spirits",
             desc:
-                "Driving India's green energy and integrated distillation future",
+                "Crafting quality spirits through integrated distillation excellence",
             stats: [
                 { value: "300", label: "Ethanol Production Capacity" },
                 { value: "Grain-Based", label: "Maize & Rice Feedstock" },
@@ -33,6 +34,7 @@ const EthanolHeroSection = () => {
             ctaBtn: "Explore Our Capabilities"
         }
     ];
+
     return (
         <>
             <section className="hero-section">
@@ -54,8 +56,8 @@ const EthanolHeroSection = () => {
 
                                     {/* STAMPS */}
                                     <div className="hero-stamps">
-                                        <img src={stamp1} alt="KDPL Logo" />
                                         <img src={stamp2} alt="Shreyas Logo" />
+                                        <img src={stamp1} alt="KDPL Logo" />
                                     </div>
 
                                     {/* TITLE */}
@@ -115,8 +117,9 @@ const EthanolHeroSection = () => {
                     </div>
                 </div>
             </section>
+
         </>
     )
 }
 
-export default EthanolHeroSection
+export default PotableHero;

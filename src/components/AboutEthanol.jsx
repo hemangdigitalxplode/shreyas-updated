@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutImage from '../assets/images/about.png'
+import AboutImage from '../assets/images/ethanol-about.jpg'
 
 const AboutEthanol = () => {
     return (
@@ -10,7 +10,7 @@ const AboutEthanol = () => {
                     <img
                         src={AboutImage}
                         alt="About Shreyas Group"
-                        className="img-fluid rounded"
+                        className="img-fluid aboutEthanol"
                     />
                 </div>
                 {/* RIGHT: Content */}

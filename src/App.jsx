@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import Home from "./Pages/home";
 import FoodGrains from "./Pages/foodgrains";
 import DistrilsEthanol from "./Pages/distrilsEthanol";
+import PotableSpritis from "./Pages/potableSpritis";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/food-grains" element={<FoodGrains />} />
             <Route path="/distrills-ethanol" element={<DistrilsEthanol />} />
+            <Route path="/potable-spirits" element={<PotableSpritis />} />
           </Routes>
         </main>
         {/* Footer – sab routes pe */}

@@ -1,35 +1,34 @@
 import React, { useState } from 'react'
-import sustainableImage from '../assets/images/ethanol-another-tab-1.jpg';
+import sustainableImage from '../assets/images/potable-tab-section-2.jpg';
 import tabImage2 from '../assets/images/thumb2.png';
 import tabImage3 from '../assets/images/thumb3.png';
 
-
-const SustainabilityCommitment = () => {
+const PotableSustainability = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const sustainabilitySlides = [
         {
             id: 1,
             bgImage: sustainableImage,
-            heading: "Reducing environmental impact through responsible operations",
+            heading: "Responsible spirits manufacturing for a cleaner future",
             subText: "Reducing environmental impact through responsible operations",
             thumbImage: sustainableImage,
-            thumbTitle: "Reducing environmental impact through responsible operations",
+            thumbTitle: "Responsible spirits manufacturing for a cleaner future",
         },
         {
             id: 2,
             bgImage: tabImage2,
-            heading: "CO₂ capture and reuse",
+            heading: "Energy-efficient distillation and blending systems",
             subText: "Efficient Irrigation Systems",
             thumbImage: tabImage2,
-            thumbTitle: "CO₂ capture and reuse",
+            thumbTitle: "Energy-efficient distillation and blending systems",
         },
         {
             id: 3,
             bgImage: tabImage3,
-            heading: "Environment and safety compliance",
+            heading: "Waste and by-product optimisation",
             subText: "Optimised Processing Units",
             thumbImage: tabImage3,
-            thumbTitle: "Environment and safety compliance",
+            thumbTitle: "Waste and by-product optimisation",
         },
     ];
     return (
@@ -76,4 +75,4 @@ const SustainabilityCommitment = () => {
     )
 }
 
-export default SustainabilityCommitment
+export default PotableSustainability;

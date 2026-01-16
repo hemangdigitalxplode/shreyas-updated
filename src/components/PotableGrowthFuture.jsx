@@ -1,7 +1,8 @@
-import React from 'react'
-import GrwoFutureImage from '../assets/images/grow-future.jpg'
+import React from "react";
+import GrwoFutureImage from '../assets/images/potable-growth-img.jpg'
 
-const GrowthFuture = () => {
+
+const PotableGrowthFuture = () => {
     return (
         <>
             <div className="row align-items-center gy-4 aboutSection">
@@ -11,14 +12,14 @@ const GrowthFuture = () => {
                         <h1 className="mb-3 ethanolHeading">
                             Growth & future <br /> outlook
                         </h1>
-                        <h6 className='smallHeading'>Expanding into value-added distillation and beverage segments</h6>
+                        <h6 className='smallHeading'>Expanding into premium and high-volume spirit markets</h6>
                         <p>
-                            The Distilleries & Ethanol vertical is structured for strategic expansion into value-added segments such as Extra Neutral Alcohol (ENA), beverage alcohol, and downstream integration. Our scalable infrastructure and technology-led approach enable us to adapt to evolving market and regulatory landscapes.
+                          The Potable Spirits vertical is strategically positioned for expansion across ENA, country liquor, malt spirits, and IMFL bottling. With scalable infrastructure and combined expertise from KDPL and Shreyas Distilleries, the vertical is aligned to meet evolving market demand while maintaining quality and operational efficiency.
                         </p>
                         {/* CTA Button */}
                         <button className="btn aboutBtn mt-3">
-                            Future-ready infrastructure <br />
-                            for diversified markets
+                            Future-ready beverage platform <br />
+                            with scalable capabilities
                         </button>
 
                     </div>
@@ -38,4 +39,4 @@ const GrowthFuture = () => {
     )
 }
 
-export default GrowthFuture
+export default PotableGrowthFuture;

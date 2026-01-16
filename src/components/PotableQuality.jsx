@@ -1,41 +1,40 @@
 import React, { useState } from 'react'
-import sustainableImage from '../assets/images/ethanol-another-tab-1.jpg';
+import sustainableImage from '../assets/images/potable-tab-1-1.jpg';
 import tabImage2 from '../assets/images/thumb2.png';
 import tabImage3 from '../assets/images/thumb3.png';
 
-
-const SustainabilityCommitment = () => {
+const PotableQuality = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const sustainabilitySlides = [
         {
             id: 1,
             bgImage: sustainableImage,
-            heading: "Reducing environmental impact through responsible operations",
-            subText: "Reducing environmental impact through responsible operations",
+            heading: "Built on regulatory discipline and operationalsafety",
+            subText: "Our Sustainability Practices",
             thumbImage: sustainableImage,
-            thumbTitle: "Reducing environmental impact through responsible operations",
+            thumbTitle: "Built on regulatory discipline and operational safety",
         },
         {
             id: 2,
             bgImage: tabImage2,
-            heading: "CO₂ capture and reuse",
+            heading: "Stringent quality control and testing",
             subText: "Efficient Irrigation Systems",
             thumbImage: tabImage2,
-            thumbTitle: "CO₂ capture and reuse",
+            thumbTitle: "Stringent quality control and testing",
         },
         {
             id: 3,
             bgImage: tabImage3,
-            heading: "Environment and safety compliance",
+            heading: "Advanced safety and firefighting systems",
             subText: "Optimised Processing Units",
             thumbImage: tabImage3,
-            thumbTitle: "Environment and safety compliance",
+            thumbTitle: "Advanced safety and firefighting systems",
         },
     ];
     return (
         <>
             <div className="container">
-                <h2 className="section-title">Sustainability Commitment</h2>
+                <h2 className="section-title">Quality, Safety and Compliance</h2>
                 <div className="futureTabWrapper">
                     <section className="sustain-slider">
                         {/* Background Image */}
@@ -45,6 +44,7 @@ const SustainabilityCommitment = () => {
                                 alt="Sustainability"
                             />
                         </div>
+
                         {/* Overlay Content */}
                         <div className="sustain-overlay">
                             <div className="sustain-left">
@@ -76,4 +76,4 @@ const SustainabilityCommitment = () => {
     )
 }
 
-export default SustainabilityCommitment
+export default PotableQuality;

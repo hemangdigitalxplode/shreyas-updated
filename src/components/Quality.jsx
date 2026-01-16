@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import sustainableImage from '../assets/images/thumb1.png';
+import sustainableImage from '../assets/images/ethanol-tab-1.jpg';
 import tabImage2 from '../assets/images/thumb2.png';
 import tabImage3 from '../assets/images/thumb3.png';
 
@@ -9,18 +9,18 @@ const Quality = () => {
         {
             id: 1,
             bgImage: sustainableImage,
-            heading: "In-House Power Generation",
+            heading: "Built on precision, safety, and regulatory discipline",
             subText: "Our Sustainability Practices",
             thumbImage: sustainableImage,
-            thumbTitle: "Zero Hazardous Wastewater",
+            thumbTitle: "PESO-approved ethanol storage and loading systems",
         },
         {
             id: 2,
             bgImage: tabImage2,
-            heading: "Water Recycling",
+            heading: "Continuous process monitoring and quality testing",
             subText: "Efficient Irrigation Systems",
             thumbImage: tabImage2,
-            thumbTitle: "Water Recycling for Irrigation",
+            thumbTitle: "Continuous process monitoring and quality testing",
         },
         {
             id: 3,
@@ -28,7 +28,7 @@ const Quality = () => {
             heading: "Energy Efficient Systems",
             subText: "Optimised Processing Units",
             thumbImage: tabImage3,
-            thumbTitle: "Energy-Efficient Processing",
+            thumbTitle: "Energy Efficient Systems",
         },
     ];
     return (
@@ -48,7 +48,7 @@ const Quality = () => {
                         {/* Overlay Content */}
                         <div className="sustain-overlay">
                             <div className="sustain-left">
-                                <h2>{sustainabilitySlides[activeIndex].heading}</h2>
+                                <h2 className='qualityEthanolHeading'>{sustainabilitySlides[activeIndex].heading}</h2>
                                 {/* <span className="sustain-sub">
                                     {sustainabilitySlides[activeIndex].subText}
                                 </span> */}
