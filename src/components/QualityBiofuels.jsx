@@ -1,41 +1,40 @@
-import React, { useState } from "react";
-import sustainableImage from '../assets/images/sustainability.png';
+import React, { useState } from 'react'
+import sustainableImage from '../assets/images/tabBioFuelsFirst.jpg';
 import tabImage2 from '../assets/images/thumb2.png';
 import tabImage3 from '../assets/images/thumb3.png';
 
-const FutureReady = () => {
+const QualityBiofuels = () => {
     const [activeIndex, setActiveIndex] = useState(0);
-
     const sustainabilitySlides = [
         {
             id: 1,
             bgImage: sustainableImage,
-            heading: "In-House Power Generation",
+            heading: "Reliable energy operations built on responsibility and trust",
             subText: "Our Sustainability Practices",
             thumbImage: sustainableImage,
-            thumbTitle: "Zero Hazardous Wastewater",
+            thumbTitle: "Reliable energy operations built on responsibility and trust",
         },
         {
             id: 2,
             bgImage: tabImage2,
-            heading: "Water Recycling",
+            heading: "Continuous monitoring and operational controls",
             subText: "Efficient Irrigation Systems",
             thumbImage: tabImage2,
-            thumbTitle: "Water Recycling for Irrigation",
+            thumbTitle: "Continuous monitoring and operational controls",
         },
         {
             id: 3,
             bgImage: tabImage3,
-            heading: "Energy Efficient Systems",
+            heading: "Plant-wide safety and emergency response systems",
             subText: "Optimised Processing Units",
             thumbImage: tabImage3,
-            thumbTitle: "Energy-Efficient Processing",
+            thumbTitle: "Plant-wide safety and emergency response systems",
         },
     ];
     return (
         <>
             <div className="container">
-                <h2 className="section-title">Sustainable. Responsible. Future-Ready.</h2>
+                <h2 className="section-title">Quality, Safety and Compliance</h2>
                 <div className="futureTabWrapper">
                     <section className="sustain-slider">
                         {/* Background Image */}
@@ -49,7 +48,7 @@ const FutureReady = () => {
                         {/* Overlay Content */}
                         <div className="sustain-overlay">
                             <div className="sustain-left">
-                                <h2>{sustainabilitySlides[activeIndex].heading}</h2>
+                                <h2 className='qualityEthanolHeading'>{sustainabilitySlides[activeIndex].heading}</h2>
                                 {/* <span className="sustain-sub">
                                     {sustainabilitySlides[activeIndex].subText}
                                 </span> */}
@@ -73,8 +72,9 @@ const FutureReady = () => {
                     </section>
                 </div>
             </div>
+
         </>
     )
 }
 
-export default FutureReady;
+export default QualityBiofuels

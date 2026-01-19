@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import Slider1 from '../assets/images/plant-picture-clean-room-equipment-stainless-steel-machines.jpg'
-import Slider2 from '../assets/images/slider-2.png'
-import Slider3 from '../assets/images/contemporary-winemaker-factory.jpg'
-import Slider4 from '../assets/images/Layer-616.jpg'
-import Slider5 from '../assets/images/Layer-617.jpg'
-
+import Slider1 from '../assets/images/bioSlider1.jpg'
+import Slider2 from '../assets/images/sliderImage2.jpg'
+import Slider3 from '../assets/images/sliderImage3.jpg'
+import Slider4 from '../assets/images/sliderImage4.jpg'
+import Slider5 from '../assets/images/slider-5.png'
 
 const slidesData = [
     {
@@ -44,9 +43,8 @@ const slidesData = [
     },
 ];
 
-const ExpandingSliderEthanol = () => {
+const ExpandingSliderBiofuels = () => {
     const [activeIndex, setActiveIndex] = useState(0);
-
     return (
         <>
             <section className="slider-container">
@@ -80,4 +78,4 @@ const ExpandingSliderEthanol = () => {
     )
 }
 
-export default ExpandingSliderEthanol
+export default ExpandingSliderBiofuels

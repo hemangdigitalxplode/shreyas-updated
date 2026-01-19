@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import heroImage from '../assets/images/potable-hero.jpg';
+import heroImage from '../assets/images/banner-n.jpg';
 import stamp1 from '../assets/images/kpdl-logo.jpg'
 import stamp2 from '../assets/images/shreyas-banner-logo.jpg'
+import stamp3 from '../assets/images/stamp-3.jpg'
 
 
 const Biofuels = () => {
@@ -22,14 +23,14 @@ const Biofuels = () => {
         {
             id: 1,
             image: heroImage,
-            titleBold: "Potable<br/>Spirits",
+            titleBold: "Energy &<br/>Biofuels",
             desc:
-                "Crafting quality spirits through integrated distillation excellence",
+                "Powering sustainable energy solutions for industries and communities",
             stats: [
-                { value: "300", label: "Ethanol Production Capacity" },
-                { value: "Grain-Based", label: "Maize & Rice Feedstock" },
-                { value: "Integrated CO", label: "Recovery & Utilisation" },
-                { value: "Captive Power", label: "Energy Self Reliant Operation" },
+                { value: "7+MW", label: "Integrated Power Capacity" },
+                { value: "100% Renewable", label: "Biofuel-Driven Energy" },
+                { value: "Multi-Fuel", label: "Biomass Flexiblity" },
+                { value: "ZLow Emission", label: "Clean Energy Systems" },
             ],
             ctaBtn: "Explore Our Capabilities"
         }
@@ -50,7 +51,7 @@ const Biofuels = () => {
                             className="hero-img"
                         />
                         {/* Overlay */}
-                        <div className="hero-overlay">
+                        <div className="hero-overlay-biofuels">
                             <div className="container">
                                 <div className="hero-content ethanolHeroContent">
 
@@ -58,6 +59,7 @@ const Biofuels = () => {
                                     <div className="hero-stamps">
                                         <img src={stamp2} alt="Shreyas Logo" />
                                         <img src={stamp1} alt="KDPL Logo" />
+                                        <img src={stamp3} alt="KDPL Logo" />
                                     </div>
 
                                     {/* TITLE */}
@@ -81,39 +83,51 @@ const Biofuels = () => {
                         </div>
                     </div>
                 ))}
-                {/* Slider Arrows */}
-                <div className="hero-arrows">
-                    <button
-                        className="hero-arrow left"
-                        onClick={() =>
-                            setActiveSlide(
-                                activeSlide === 0 ? heroSlides.length - 1 : activeSlide - 1
-                            )
-                        }
-                    >
-                        ←
-                    </button>
+                <div className="hero-controls">
 
-                    <button
-                        className="hero-arrow right"
-                        onClick={() =>
-                            setActiveSlide(
-                                activeSlide === heroSlides.length - 1 ? 0 : activeSlide + 1
-                            )
-                        }
-                    >
-                        →
-                    </button>
-                </div>
-                {/* Stats below arrows */}
-                <div className="hero-thumbnails d-none">
-                    <div className="hero-stats-foodGrains">
-                        {heroSlides[activeSlide]?.stats?.map((stat, i) => (
-                            <div key={i} className="hero-stat-item">
-                                <strong>{stat.value}</strong>
-                                <span>{stat.label}</span>
-                            </div>
-                        ))}
+                    {/* Progress line */}
+                    <div className="hero-controls__progress d-none">
+                        <span className="hero-controls__progress-indicator"></span>
+                    </div>
+
+                    {/* Stats + Arrows */}
+                    <div className="hero-controls__row">
+
+                        {/* Stats */}
+                        <div className="hero-controls__stats">
+                            {heroSlides[activeSlide]?.stats?.map((stat, i) => (
+                                <div key={i} className="hero-controls__stat">
+                                    <strong>{stat.value}</strong>
+                                    <span>{stat.label}</span>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Arrows */}
+                        <div className="hero-controls__arrows">
+                            <button
+                                className="hero-controls__arrow"
+                                onClick={() =>
+                                    setActiveSlide(
+                                        activeSlide === 0 ? heroSlides.length - 1 : activeSlide - 1
+                                    )
+                                }
+                            >
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+
+                            <button
+                                className="hero-controls__arrow"
+                                onClick={() =>
+                                    setActiveSlide(
+                                        activeSlide === heroSlides.length - 1 ? 0 : activeSlide + 1
+                                    )
+                                }
+                            >
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+
                     </div>
                 </div>
             </section>

@@ -1,5 +1,5 @@
 import React from "react";
-import AboutImage from '../assets/images/about-potable.jpg'
+import AboutImage from '../assets/images/about-biofuels.jpg'
 
 
 const AboutBiofuels = () => {

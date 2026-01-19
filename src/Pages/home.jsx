@@ -10,6 +10,7 @@ import GlobalSection from "../components/GlobalPresence";
 import HeroSection from "../components/HeroSection";
 import ExpandingSlider from "../components/ExpandingSlider";
 import ExpandableCardSlider from "../components/ExpandableCardSlider";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     const [activeTab, setActiveTab] = useState("verticals");
@@ -89,36 +90,44 @@ const Home = () => {
                         <div className="row g-4">
                             {/* Card 1 */}
                             <div className="col-md-4">
-                                <div className="business-card">
-                                    <img src={cardImg1} alt="Food & Grain" />
-                                    <div className="overlay">
-                                        <h5>Food & Grain</h5>
-                                        <p>
-                                            Integrated rice processing across Basmati
-                                            and Non-Basmati categories.
-                                        </p>
+                                <Link to={'/food-grains'}>
+                                    <div className="business-card">
+                                        <img src={cardImg1} alt="Food & Grain" />
+                                        <div className="overlay">
+                                            <h5>Food & Grain</h5>
+                                            <p>
+                                                Integrated rice processing across Basmati
+                                                and Non-Basmati categories.
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </div>
+
+
 
                             {/* Card 2 */}
                             <div className="col-md-4">
-                                <div className="business-card">
-                                    <img src={cardImg2} alt="Distilleries & Ethanol" />
-                                    <div className="overlay">
-                                        <h5>Distilleries & Ethanol</h5>
+                                <Link to={'/distrills-ethanol'}>
+                                    <div className="business-card">
+                                        <img src={cardImg2} alt="Distilleries & Ethanol" />
+                                        <div className="overlay">
+                                            <h5>Distilleries & Ethanol</h5>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </div>
 
                             {/* Card 3 */}
                             <div className="col-md-4">
-                                <div className="business-card">
-                                    <img src={cardImg3} alt="Energy & Biofuels" />
-                                    <div className="overlay">
-                                        <h5>Energy & Biofuels</h5>
+                                <Link to={'/energy-biofuels'}>
+                                    <div className="business-card">
+                                        <img src={cardImg3} alt="Energy & Biofuels" />
+                                        <div className="overlay">
+                                            <h5>Energy & Biofuels</h5>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </div>
 
                         </div>

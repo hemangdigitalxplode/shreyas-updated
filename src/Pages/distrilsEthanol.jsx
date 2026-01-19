@@ -40,7 +40,6 @@ const DistrilsEthanol = () => {
       <div className='sustainabilityCommitment container my-5'>
         <SustainabilityCommitment />
       </div>
-
       {/* Growth & future */}
       <div className='container'>
         <GrowthFuture />

@@ -6,6 +6,7 @@ import CertificationsSection from '../components/CertificationsSection';
 import CareerBanner from '../components/CareerBanner';
 import FoodGrainsHero from '../components/FoodGrainsHero';
 import FutureReady from '../components/FutureReady';
+import QualityFoodGrains from '../components/QualityFoodGrains';
 
 const FoodGrains = () => {
     return (
@@ -25,6 +26,9 @@ const FoodGrains = () => {
             {/* Slider section */}
             <div className='sliderSectionContainer'>
                 <ExpandingSlider />
+            </div>
+            <div className="container my-5">
+                <QualityFoodGrains />
             </div>
             {/* tab section */}
             <div className='tabSectionContainer'>

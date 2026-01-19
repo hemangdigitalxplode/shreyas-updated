@@ -632,6 +632,26 @@
   align-items: center;
 }
 
+.hero-overlay-biofuels {
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.15)); */
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay-potable {
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.15)); */
+  display: flex;
+  align-items: center;
+}
+
 /* Content */
 .hero-content {
   max-width: 650px;
@@ -770,7 +790,6 @@
   background: #146f22;
 }
 
-/* THUMBNAILS */
 .hero-thumbnails {
   position: absolute;
   bottom: 20px;
@@ -799,6 +818,111 @@
 .hero-thumb.active {
   border-color: #1a8f2b;
 }
+
+
+/* Main wrapper */
+/* Main wrapper */
+.hero-controls {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  /* width: 100%; */
+  padding: 0 40px;
+  z-index: 5;
+  font-family: var(--font-family-root);
+}
+
+/* Progress line */
+.hero-controls__progress {
+  width: 43%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.hero-controls__progress-indicator {
+  position: absolute;
+  left: 10%;
+  top: 0;
+  width: 60px;
+  height: 2px;
+  background: #ffffff;
+}
+
+/* Stats + arrows row */
+.hero-controls__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+/* Stats */
+.hero-controls__stats {
+  display: flex;
+  gap: 10px;
+  color: #fff;
+}
+
+.hero-controls__stat strong {
+  font-size: 18px;
+  display: block;
+}
+
+.hero-controls__stat {
+  padding-right: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+
+/* Vertical divider */
+.hero-controls__stat::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 5px;
+  height: 100%;
+  width: 3px;
+  background: #fff;
+}
+
+/* Remove divider from last item */
+.hero-controls__stat:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+.hero-controls__stat:last-child::after {
+  display: none;
+}
+
+.hero-controls__stat span {
+  font-size: 10px;
+  opacity: 0.9;
+}
+
+/* Arrows */
+.hero-controls__arrows {
+  display: flex;
+  gap: 12px;
+}
+
+.hero-controls__arrow {
+  width: 42px;
+  height: 42px;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.hero-controls__arrow:hover {
+  background: #146f22;
+}
+
 
 /* MOBILE */
 @media (max-width: 768px) {
@@ -1883,35 +2007,47 @@
     gap: 25px;
   }
 }
-.aboutEthanol{
+
+.aboutEthanol {
   height: 500px !important;
 }
-.qualityEthanolHeading{
+
+.qualityEthanolHeading {
   font-size: 30px !important;
 }
+
 /* STAMPS */
 .hero-stamps {
-    display: flex;
-    gap: 2px;
-    margin-bottom: 22px;
+  display: flex;
+  gap: 2px;
+  margin-bottom: 22px;
 }
 
 .hero-stamps img {
-    height: 130px;
-    width: auto;
-    /* background: #fff; */
-    padding: 8px 14px;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  height: 130px;
+  width: auto;
+  /* background: #fff; */
+  padding: 8px 14px;
+  border-radius: 10px;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); */
+  border-radius: 30px;
 }
-.bottomBoldPotable{
+
+.bottomBoldPotable {
   font-family: var(--font-family-root);
   font-weight: 600;
   font-size: 25px !important;
 }
-.potableHeading{
+
+.potableHeading {
   font-size: 20px;
   font-family: var(--font-family-root);
   margin: 12px 0;
   font-weight: 600;
+}
+
+.biofuels-integrated-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }

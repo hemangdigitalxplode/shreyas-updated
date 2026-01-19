@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Slider1 from '../assets/images/slider-1.png'
-import Slider2 from '../assets/images/slider-2.png'
-import Slider3 from '../assets/images/slider-3.png'
-import Slider4 from '../assets/images/slider-4.png'
+import Slider1 from '../assets/images/sliderImage-1.jpg'
+import Slider2 from '../assets/images/sliderImage2.jpg'
+import Slider3 from '../assets/images/sliderImage3.jpg'
+import Slider4 from '../assets/images/sliderImage4.jpg'
 import Slider5 from '../assets/images/slider-5.png'
 
 const slidesData = [
@@ -10,7 +10,7 @@ const slidesData = [
         id: 1,
         img: Slider1,
         title: "Title",
-        boxTitle: "State of the Art Manufacturing Infrastructure",
+        boxTitle: "Manufacturing & Process Excellence",
         boxSubTitle: "Japanese Satake Milling & Sortex",
     },
     {
