@@ -1,5 +1,5 @@
 import React from "react";
-import PotableHero from "../components/potableHero";
+import PotableHero from "../components/PotableHero";
 import AboutPotable from "../components/AboutPotable";
 import IntegratedBeveragesOperations from "../components/IntegratedBeveragesOperations";
 import ProductPortfolio from "../components/ProductPortfolio";
@@ -25,23 +25,23 @@ const PotableSpritis = () => {
             </div>
             {/* Portfolio section */}
             <div className="container">
-                <ProductPortfolio/>
+                <ProductPortfolio />
             </div>
             {/* Slider */}
             <div className="potableSliderContainer">
-                <ExpandingSliderPotable/>
+                <ExpandingSliderPotable />
             </div>
             {/* tab section */}
             <div className="container">
-                <PotableQuality/>
+                <PotableQuality />
             </div>
             {/* tab section - 2 */}
             <div className="container my-5">
-                <PotableSustainability/>
+                <PotableSustainability />
             </div>
             {/* last section */}
             <div className="container">
-                <PotableGrowthFuture/>
+                <PotableGrowthFuture />
             </div>
 
         </>
